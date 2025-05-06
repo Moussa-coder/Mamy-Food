@@ -4,20 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mamy food</title>
+    <link rel="stylesheet" href="./Css/index.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="./Assets/logo.png" alt="Mamy Food">
-            <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">A propos</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Réservation</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+        <nav class="navbar">
+          <img src="./Assets/logo1.png" alt="Mamy Food" class="logo">
+          <ul class="nav-links">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="A propos.html">À propos</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
+
+    <!-- Section Accueil -->
+      <section class="accueil">
+        <div class="accueil-content">
+            <h1>Bienvenue chez Mamy Food</h1>
+            <p>Des plats faits maison, avec amour et passion ❤️</p>
+            <a href="#menu" class="btn">Commander maintenant</a>
+        </div>
+    </section>
+
+    <!-- Section a propos -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>À propos de Mamy Food</h2>
+                <p>
+                    Chez Mamy Food, chaque plat raconte une histoire, un souvenir d’enfance, un moment chaleureux en famille.
+                    Nos recettes sont inspirées de la cuisine traditionnelle et préparées avec des ingrédients frais, locaux
+                    et beaucoup d’amour. 
+                </p>
+                <p>Derrière Mamy Food se cache une histoire d'amour pour la cuisine et le partage. 
+                    Nos plats racontent des souvenirs d'enfance, ces moments précieux autour d'une table généreuse. 
+                    Nous mettons tout notre cœur à vous offrir des saveurs réconfortantes qui rappellent les douceurs préparées par les mains expertes d'une grand-mère attentionnée.
+                </p>
+                <p>
+                    Venez vivre une expérience culinaire authentique et conviviale dans une ambiance chaleureuse.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="./Assets/image1.jpg" alt="Cuisine maison">
+            </div>
+        </div>
+    </section>    
+
+    <!-- Section Menu -->
+    <section class="menu" id="menu">
+        <h2>Notre Menu</h2>
+        <div class="menu-items">
+            <div class="menu-card">
+                <img src="./Assets/Spaghetti maison.jpg" alt="Plat 1">
+                <h3>Spaghetti maison</h3>
+                <p>Pâtes fraîches avec sauce tomate et basilic</p>
+                <span>12 €</span>
+            </div>
+            <div class="menu-card">
+                <img src="./Assets/Poulet grillé.jpg" alt="Plat 2">
+                <h3>Poulet grillé</h3>
+                <p>Servi avec légumes de saison</p>
+                <span>14 €</span>
+            </div>
+            <div class="menu-card">
+                <img src="./Assets/Salade fraîcheur.jpg" alt="Plat 3">
+                <h3>Salade fraîcheur</h3>
+                <p>Laitue, avocat, œufs, vinaigrette maison</p>
+                <span>10 €</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <h2>Contactez-nous</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message" rows="5" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div class="contact-info">
+                <h3>Informations</h3>
+                <p><strong>Adresse :</strong> 123 Rue du Goût, Paris</p>
+                <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
+                <p><strong>Horaires :</strong><br>Lun - Sam : 11h – 22h<br>Dim : Fermé</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section résevation -->
+    <section class="reservation" id="reservation">
+        <h2>Réserver une table</h2>
+        <form class="reservation-form">
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <input type="tel" placeholder="Téléphone" required>
+            <input type="date" required>
+            <input type="time" required>
+            <input type="number" placeholder="Nombre de personnes" min="1" required>
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+
+    <!-- Section footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./Assets/logo1.png" alt="Mamy Food">
+                <p>Des plats faits maison, avec amour ❤️</p>
+            </div>
+            <div class="footer-links">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Réservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Suivez-nous</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="./Assets/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="./Assets/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="./Assets/twitter.svg" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mamy Food. Tous droits réservés.</p>
+        </div>
+    </footer>    
 </body>
 </html>
