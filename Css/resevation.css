@@ -1,0 +1,86 @@
+/* reservation.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+.reservation {
+    padding: 60px 20px;
+    max-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.reservation h2 {
+    text-align: center;
+    color: #c44d2f;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.reservation-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    animation: slideUp 1s ease-in-out;
+}
+
+.reservation-form input,
+.reservation-form button {
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.reservation-form input:focus {
+    border-color: #c44d2f;
+    box-shadow: 0 0 10px rgba(196, 77, 47, 0.2);
+}
+
+.reservation-form button {
+    grid-column: span 2;
+    background-color: #c44d2f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.reservation-form button:hover {
+    background-color: #9e3a25;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .reservation-form {
+        grid-template-columns: 1fr;
+    }
+
+    .reservation {
+        padding: 40px 15px;
+    }
+}
