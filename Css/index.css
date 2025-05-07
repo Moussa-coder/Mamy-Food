@@ -10,7 +10,7 @@ body {
   }
   
   .navbar {
-    background-color: #FF6B00; /* Orange vif et appétissant */
+    background-color: #f57812; /* Orange vif et appétissant */
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
